@@ -1,124 +1,117 @@
-🏥 SIGCMI
-Sistema Integral de Gestión de Citas Médicas Inteligentes
-4
-🚀 Descripción
+# 🏥 SIGCMI  
+## Intelligent Medical Appointment Management System  
 
-SIGCMI es una plataforma web diseñada para optimizar la gestión de citas médicas en centros de salud mediante una arquitectura escalable y segura.
+---
 
-El sistema permite:
+## 🚀 Description
 
-Registro y autenticación de usuarios
+**SIGCMI** is a web-based platform designed to optimize medical appointment management in healthcare centers through a scalable and secure architecture.
 
-Gestión de pacientes y médicos
+The system allows:
 
-Administración de especialidades
+- User registration and authentication  
+- Profile management (Patient and Doctor)  
+- Medical schedule with time-based availability  
+- Appointment booking  
+- Cancellation and rescheduling  
+- Automatic notifications  
+- Administrative panel  
+- Metrics dashboard  
 
-Agenda médica con control de disponibilidad
+Does NOT include:
 
-Agendamiento, cancelación y reprogramación de citas
+- Advanced clinical history  
+- Real billing system  
+- Integration with real health insurance providers (EPS)  
 
-Historial clínico básico
+---
 
-Dashboard administrativo con métricas
+## 🏗️ Architecture
 
-Notificaciones automáticas (simuladas)
+The system implements a **Client-Server N-Tier Architecture**:
 
-🏗️ Arquitectura
+- 🎨 Frontend: Web/Mobile (React / Angular)  
+- ⚙️ Backend: REST API (Node.js / Python)  
+- 🗄️ Database: PostgreSQL  
+- 🔔 Notifications: Simulated SMTP Service  
 
-El sistema implementa una arquitectura Cliente-Servidor en Modelo N-Capas:
+### System Layers
 
-🎨 Frontend: React / Angular
+1. Presentation Layer (Frontend)  
+2. Business Logic Layer (Backend REST API)  
+3. Persistence Layer (Database)  
 
-⚙️ Backend: Node.js / Python (API REST)
+Additionally, the system integrates with an external notification service.
 
-🗄️ Base de Datos: PostgreSQL
+---
 
-🔐 Autenticación: JWT + bcrypt
+## 🔐 Security
 
-🔔 Notificaciones: Servicio SMTP simulado
+- Password encryption using bcrypt  
+- JWT-based authentication  
+- Role-based access control  
+- Protection against SQL injection  
+- Sensitive medical data handling  
 
-🐳 Docker (opcional)
+---
 
-Capas del Sistema
+## 👥 System Roles
 
-Capa de Presentación
+- Patient  
+- Doctor  
+- Administrator  
 
-Capa de Negocio
+---
 
-Capa de Persistencia
+## 📊 Main Features
 
-🔐 Seguridad
+- Patient and doctor registration  
+- Secure JWT login  
+- Medical availability management  
+- Appointment booking  
+- Cancellation and rescheduling  
+- Automatic notifications  
+- Administrative dashboard  
 
-Encriptación de contraseñas con bcrypt
+---
 
-Autenticación basada en JWT
+## 🧠 Data Model
 
-Control de acceso por roles
+Main entities:
 
-Protección contra inyección SQL
+- Patient  
+- Doctor  
+- Specialty  
+- Appointment  
+- MedicalRecord  
+- Role  
+- User  
 
-Manejo de datos sensibles
+All entities use **UUID as primary key**.
 
-👥 Roles del Sistema
+---
 
-👤 Paciente
+## 🌿 Methodology
 
-👨‍⚕️ Médico
+- Scrum  
+- Git Flow  
+- Fibonacci sprint estimation  
+- Mandatory Pull Requests before merging into `main`  
 
-🛠️ Administrador
+---
 
-📊 Funcionalidades Principales
+## 🌱 Branch Strategy
 
-Registro de pacientes y médicos
+\`\`\`bash
+master      → Production
+release     → Stable versions
+develop     → Main development branch
+feature/*   → New features
+\`\`\`
 
-Login seguro con JWT
+---
+## 📂 Project Structure
 
-Gestión de disponibilidad médica
-
-Reserva de citas
-
-Cancelación y reprogramación
-
-Notificaciones automáticas
-
-Dashboard administrativo
-
-🧠 Modelo de Datos
-
-Entidades principales:
-
-Usuario
-
-Rol
-
-Paciente
-
-Médico
-
-Especialidad
-
-Cita
-
-HistorialClinico
-
-Todas las entidades utilizan UUID como clave primaria.
-
-🌿 Metodología
-
-🌀 Scrum
-
-🌱 Git Flow
-
-📌 Sprints con estimación Fibonacci
-
-🔄 Pull Requests obligatorios para merge a main
-
-🌱 Estrategia de Ramas
-main        → Producción
-develop     → Desarrollo principal
-release     → Versiones estables
-feature/*   → Nuevas funcionalidades
-📂 Estructura del Proyecto
 SIGCMI/
 │
 ├── frontend/
@@ -126,35 +119,40 @@ SIGCMI/
 ├── database/
 ├── docs/
 └── README.md
-🛠️ Instalación (Ejemplo Backend)
-git clone https://github.com/tu-org/SIGCMI.git
+
+## 🛠️ Installation (Backend Example)
+
+`\`\`bash
+git clone https://github.com/DeltaG8109/SIGCMI.git
 cd backend
 npm install
 npm run dev
-📚 Documentación Completa
+`\`\`
 
-La documentación técnica completa (diagramas UML, MER, arquitectura detallada y requisitos) se encuentra en la Wiki del proyecto.
+---
 
-🎓 Contexto Académico
+## 📚 Documentation
 
-Proyecto desarrollado para el programa ADSO – SENA.
+Complete technical documentation (UML diagrams, ER diagrams, detailed architecture, and requirements) can be found on the project Wiki.
 
-Cumple con:
+---
 
-Diagrama de Arquitectura
+## 🎓 Academic Context
 
-Diagrama de Componentes
+Project developed for the ADSO – SENA program.
 
-Diagrama de Despliegue
+Includes:
 
-Diagrama de Clases
+- Architecture Diagram
+- Component Diagram
+- Deployment Diagram
+- Class Diagram
+- Entity-Relationship Model
+- Sequence Diagrams
+- Functional and Non-Functional Requirements
 
-Modelo Entidad-Relación
+---
 
-Diagramas de Secuencia
+## 📜 License
 
-Requisitos Funcionales y No Funcionales
-
-📜 Licencia
-
-Proyecto académico – Uso educativo.
+Academic project – Educational use.
