@@ -152,6 +152,15 @@ Includes:
 - Functional and Non-Functional Requirements
 
 ---
+## 📌 Development Team
+
+|Name                 |Email                          |Number Phone |Roles      |
+|---------------------|-------------------------------|-------------|-----------|
+|Juan Esteban Montoya |montoyajuanes11@gmail.com      |3137498332   |Full-stack |
+|Santiago Galindo     |hernnadezsantiago.00@gmail.com |3105212658   |Front-end  |
+|Cristians Marmolejo  |CFMR25886781@soy.sena.edu.co   |3046184021   |Back-end   |
+|Karen Yulieth Herrera|herrerayulieth254@gmail.com    |3132369317   |Analyst    |
+|Karen Daniela Tamayo |kdaniela0731@gmail.com         |3174035244   |Full-stack |
 
 ## 📜 License
 
