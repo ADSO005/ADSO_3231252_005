@@ -133,7 +133,7 @@ npm run dev
 
 ## 📚 Documentation
 
-Complete technical documentation (UML diagrams, ER diagrams, detailed architecture, and requirements) can be found on the project Wiki.
+Complete technical documentation (UML diagrams, ER diagrams, detailed architecture, and requirements) can be found on the project <a href="https://github.com/ADSO005/ADSO_3231252_005/wiki">Wiki</a>.
 
 ---
 
